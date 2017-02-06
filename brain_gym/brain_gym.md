@@ -58,5 +58,5 @@ Question: A young woman is attending her mother's funeral. While there, she meet
 Why does she kill her sister?
 
 ```
-The sister killed the man, who killed their mother
+The sister killed the man, who killed their mother - BRUTAL!
 ```
