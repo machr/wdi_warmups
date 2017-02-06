@@ -34,7 +34,7 @@ Name four days of the week that start with the letter "t"?
 A man has to get a fox, a chicken, and a sack of corn across a river. He has a row boat, and it can only carry him and one other thing. If the fox and the chicken are left together, the fox will eat the chicken. If the chicken and the corn are left together, the chicken will eat the corn. How does the man do it?
 
 ```
-# He puts :wolf: in the sack with :corn:
+He puts the wolf in the sack with :corn:
 ```
 ## Question Five
 
@@ -48,7 +48,7 @@ What is highest number of figs you can get to Capertown?
 Question: A surgeon named Hal and a bus driver named Al are both in love with the same woman named Paige. Al needs to go for a long trip of 10 days. Before he left he gave Paige 10 apples. Why?
 
 ```
-### An :apple: a day, keeps the doctor away!
+An apple a day, keeps the doctor away!
 ```
 
 ## Question Seven
