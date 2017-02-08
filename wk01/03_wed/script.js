@@ -17,11 +17,29 @@ var thatArray = ["Facebook Platform","Erlang Enthusiasts","Ex-Girlfriends",
 "Surgeons","Pounding Jagger Bombs","Textbooks","Coffee Shops","Baristas"];
 
 function createStartup(){
-  var thisArrayChoice = Math.floor(Math.random() * thisArray.length);
-  var thatArrayChoice = Math.floor(Math.random() * thatArray.length);
 
-  var startupName = thisArray[thisArrayChoice] + " " + thatArray[thatArrayChoice];
+  // used the link below to find out how to generate a random number- the example uses 20 as its number range
+  // but we want to make a number in the whole array - so we use the .length of the array
+  // the Math.floor is a built-in method in JS that will round a decimal number down to the lowest closest number. 1.7 become 1 and 2.9 becomes 2
+  // This will help us get the first element in our array which is index 0 ( [0]  )
+  // https://www.freecodecamp.com/challenges/generate-random-whole-numbers-with-javascript
+  var numberInThisArray = Math.floor(Math.random() * thisArray.length);
+  var numberInThatArray = Math.floor(Math.random() * thatArray.length);
+
+  // ================================================================
+
+  // the variable startupName is where we put together 2 random words found in the array. we get the words by
+  // putting the random number we just found, in the index of our array, fx thisArray[3] is thisArray[numberInThisArray]
+  // We do the same for the other array. This gives us the 2 selection we will put together to create the name
+
+  // our name will be a string using ' + ', and our javascript variables together. only HTML needs "" around them.
+  var startupName = thisArray[numberInThisArray] + " - " + thatArray[numberInThatArray];
+
+  // line 39 chooses the #startup-name h2 element in our code and sets the text to the name we generated and
+  //stored in variable startupName on line 36
   document.getElementById('startup-name').innerHTML = startupName;
+
+  // line 43 adds a css style to startup-name that is called 'styled'. This gives it a yellow background
   document.getElementById('startup-name').className = "styled";
 }
 
