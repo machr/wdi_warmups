@@ -1,6 +1,6 @@
-var bob = [3, 2, 6, 11, 9, 2, 6, 9, 10];
-var jimbo = [ 5,12,9,22,13,7,16,10,11 ];
-var fish = [ 2,2,4,5,4,3,6,4,1,];
+// var bob = [3, 2, 6, 11, 9, 2, 6, 9, 10];
+// var jimbo = [ 5,12,9,22,13,7,16,10,11 ];
+// var fish = [ 2,2,4,5,4,3,6,4,1,];
 
 var totalScores = function(scores){
   var score = 0;
@@ -36,12 +36,12 @@ var jimboOverPar = jimboTotal - coursePar;
 
 var fishTotal = totalScores(golfers.fish.strokes);
 
-
-
 var parCourse = ("Par for course is " + fishTotal + " strokes");
 var bob = ("Bob's total was " + bobsTotal + ". Bob went " + bobOverPar + " strokes over par and owes Fish $" + bobOverPar);
 var jimbo = ("Jimbo's total was " + jimboTotal + ". Jimbo went " + jimboOverPar +" strokes over par and owes Fish $" + jimboOverPar);
 var fish = ("Fish's total was " + fishTotal + " and won $" + (bobOverPar + jimboOverPar) + " on sidebets");
+
+// Grab the first html element with the class of '.bob'
 document.querySelector('.bob').innerHTML = bob;
 document.querySelector('.jimbo').innerHTML = jimbo;
 document.querySelector('.fish').innerHTML = fish;
