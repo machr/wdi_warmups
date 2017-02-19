@@ -3,6 +3,9 @@
 //  Add text input field, to capture input string
 //  add delay to check if its a palindrome on key-up while typing
 
+// Remove punctuation and spaces
+// convert strings to lowercase or uppercase for normalization
+
 /////////////////// TO DO ///////////////////
 
 
