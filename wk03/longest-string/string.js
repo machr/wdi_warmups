@@ -27,7 +27,8 @@ function makeLongestString(a, b){
 
   // push each letter in alphabetArray and check if the letter is already present
   for (var i = 0; i < stringToArray.length; i++) {
-    if (alphabetArray.includes(stringToArray[i]) === false ) {
+    // alternatively, put  '=== false' instead of '!' in if-statement 
+    if (!alphabetArray.includes(stringToArray[i])) {
       alphabetArray.push(stringToArray[i]);
     }
   }
