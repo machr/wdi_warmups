@@ -13,6 +13,8 @@ message.map(function(character){
   var decoded;
   for (var i = 0; i < message.length; i++) {
     decoded = shifted[indexOfChar];
+    return decoded;
   }
-  console.log(decoded);
+  var decodedMessage = decoded.join('');
+  console.log( decodedMessage );
 });
