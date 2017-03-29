@@ -1,0 +1,18 @@
+<div class="create-pokemon">
+  <form class="" action="/pokemons" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for="">Nickname</label>
+    <input type="text" name="nickname" value="">
+
+    <label for="">Species</label>
+    <input type="text" name="species" value="">
+
+    <label for="">Pokemon Level</label>
+    <input type="number" name="level" value="">
+
+    <label for="">Link to image</label>
+    <input type="text" name="image_url" value="">
+
+    <input type="submit" name="create-btn" value="Create Pokemon">
+  </form>
+</div>

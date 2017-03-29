@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  font-family: 'Helvetica';
+}
+h1, .pokemon-card {
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.create-pokemon {
+
+  margin: 1em 2em;
+  border-bottom: 2px solid black;
+  padding-bottom: 1em;
+}
+
+.pokemon-card {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+
+}
+.pokemon-card img {
+  width: 100%;
+  margin: 0;
+}
+
+header, footer {
+  padding: 0.25em;
+  background-color: #e4e4e4;
+  font-size: 1.5em;
+}
+
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+header span {
+  display: inline-block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}

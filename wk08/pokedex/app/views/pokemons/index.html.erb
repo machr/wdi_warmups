@@ -1,0 +1,22 @@
+<h1>Pokedex</h1>
+<a href="/pokemons/new">Create new Pokemon</a>  
+
+<section class="container">
+<% @pokemons.each do |pokemon| %>
+  <div class="pokemon-card">
+    <header>
+      <span>
+        <%= pokemon.nickname %>
+      </span>
+      <span>
+        <%= pokemon.level %>
+      </span>
+    </header>
+    <div class="">
+        <img src="<%= pokemon.image_url %>" alt="">
+    </div>
+    <footer><%= pokemon.species %></footer>
+  </div>
+  <% end %>
+
+</section>
