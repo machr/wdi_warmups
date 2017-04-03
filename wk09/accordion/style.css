@@ -1,0 +1,60 @@
+body, div, li, ul, h3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #2E2C41;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.accordion {
+  width: 400px;
+  margin: 3em auto;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.accordion:first-child{
+  border-radius: 8px 8px 0;
+
+}
+
+.accordion-button {
+  font-weight: 700;
+  display: flex;
+}
+
+.fa {
+  margin: 0 0.5em;
+}
+
+.accordion-button h3 {
+  margin-left: 0.5em;
+}
+
+.accordion-button, .panel {
+  padding: 12px 8px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.menu-items {
+  display: none;
+}
+
+.panel {
+  font-weight: 400;
+  border-top: 1px solid rgba(0,0,0,0.3);
+  background-color: #454359;
+  color: white;
+  padding-left: 3em;
+}
+
+.panel:hover{
+  background-color: #B63B4D;
+}
+
+.show{
+  display: block;
+}
